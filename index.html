@@ -1,59 +1,95 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loja de Roupas</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- Link para o CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <div class="logo">
-            <h1>MyClothes</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Produtos</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="produtos">
-        <h2>Produtos em Destaque</h2>
-        <div class="produtos-lista">
-            <div class="produto">
-                <img src="img/image.webp" alt="Produto 1">
-                <h3>Camiseta Estilosa</h3>
-                <p>R$ 79,90</p>
-                <button>Comprar</button>
-            </div>
-            <div class="produto">
-                <img src="img/26408cad3638b0a9d58efc16cf.avif" alt="Produto 2">
-                <h3>Calça Jeans</h3>
-                <p>R$ 129,90</p>
-                <button>Comprar</button>
-            </div>
-            <div class="produto">
-                <img src="img/vestido_floral_amanhecer_14367_5_62db6f9d2b6ba3d8c097e5bb82bd7290.webp" alt="Produto 3">
-                <h3>Vestido Floral</h3>
-                <p>R$ 149,90</p>
-                <button>Comprar</button>
+    <!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Loja de Roupas</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Carrinho</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </section>
+    </nav>
 
-    <section class="contato">
-        <h2>Contato</h2>
-        <p>Entre em contato conosco para mais informações!</p>
-        <p>Email: contato@MyClothes.com</p>
-        <p>Telefone: (11) 1234-5678</p>
-    </section>
+    <!-- Seção de Produtos -->
+    <div class="container mt-5">
+        <h2 class="text-center">Nossos Produtos</h2>
+        <div class="row">
+            <!-- Produto 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/image.webp" class="card-img-top" alt="Produto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Camiseta Masculina</h5>
+                        <p class="card-text">Camiseta confortável de algodão, perfeita para o dia a dia.</p>
+                        <p class="card-text"><strong>R$ 79,99</strong></p>
+                        <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                    </div>
+                </div>
+            </div>
 
-    <footer>
-        <p>&copy; 2024 My Clothes. Todos os direitos reservados.</p>
+            <!-- Produto 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/vestido_floral_amanhecer_14367_5_62db6f9d2b6ba3d8c097e5bb82bd7290.webp" class="card-img-top" alt="Produto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Vestido Floral</h5>
+                        <p class="card-text">Vestido floral proprio para dias de verao com tecido 100% algodao.</p>
+                        <p class="card-text"><strong>R$ 199,99</strong></p>
+                        <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Produto 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/26408cad3638b0a9d58efc16cf.avif" class="card-img-top" alt="Produto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Calça Jeans Feminina</h5>
+                        <p class="card-text">Calça jeans feminina, confortável e estilosa para diversas ocasiões.</p>
+                        <p class="card-text"><strong>R$ 129,99</strong></p>
+                        <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2024 Loja de Roupas | Todos os direitos reservados</p>
     </footer>
+
+    <!-- Scripts do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>
